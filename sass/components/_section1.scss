@@ -94,7 +94,7 @@
 }
 
 
-.icon-close {
+.modal-iconclose {
     width: 11px;
     height: 11px;
     fill: black;
@@ -103,8 +103,8 @@
     transition: fill $time $cubic;
 }
 
-.modal-close:hover .icon-close,
-.modal-close:focus .icon-close {
+.modal-close:hover .modal-iconclose,
+.modal-close:focus .modal-iconclose {
     fill: $selected-color;
 }
 
@@ -120,18 +120,18 @@
 
 
 
-.form-area {
+.modal-area {
     position: relative;
     display: flex;
 }
 
 
-.form-area:nth-child(-n+4) {
+.modal-area:nth-child(-n+4) {
     margin-bottom: 28px;
 }
 
 
-.form-input {
+.modal-input {
     display: block;
     padding-left: 42px;
     padding-right: 10px;
@@ -143,17 +143,17 @@
     cursor: pointer;
 }
 
-.form-input:focus {
+.modal-input:focus {
     outline: none;
     border-color: $selected-color;
 
 }
 
-.form-input:focus+.form-icon {
+.modal-input:focus+.modal-icon {
     fill: $selected-color;
 }
 
-.form-icon {
+.modal-icon {
     position: absolute;
     top: 14px;
     left: 15px;
@@ -191,7 +191,7 @@
     color: rgba(117, 117, 117, 0.5);
 }
 
-.agreement {
+.agreement-position__input {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -206,18 +206,18 @@
     margin-top: 20px;
 }
 
-.form-area-agreement {
+.agreement-position__label {
     margin-top: 20px;
     width: 100%;
     font-weight: 400;
     line-height: 1.71;
 }
 
-.form-area-agreement>span {
+.agreement-position__label>span {
     position: relative;
 }
 
-.agreement-icon {
+.agreement-position__icon {
     position: absolute;
 
     left: 0;
@@ -235,12 +235,12 @@
 
 }
 
-.agreement:checked~.agreement-icon {
+.agreement-position__input:checked~.agreement-position__icon {
     background-color: $selected-color;
     border-color: $selected-color;
 }
 
-.form-title {
+.modal-title {
     position: absolute;
     transform: translateY(calc(-100% - 4px));
     font-weight: 400;
@@ -258,7 +258,7 @@
     color: $selected-color;
 }
 
-.modal-button {
+.agreement-position__button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -289,8 +289,8 @@
     transition: background-color $time $cubic;
 }
 
-.modal-button:hover,
-.modal-button:focus {
+.agreement-position__button:hover,
+.agreement-position__button:focus {
     background-color: #188CE8;
 
 }

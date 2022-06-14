@@ -32,7 +32,7 @@
 }
 
 
-.header-nav-item:not(:last-child) {
+.header-nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -40,7 +40,7 @@
     border-bottom: 1px solid #ECECEC;
 }
 
-.nav-link-color::after {
+.header-nav__link--2color::after {
     position: absolute;
     display: inline-flex;
     content: "";
@@ -53,14 +53,14 @@
 }
 
 
-.head-contacts {
+.header-contacts {
     margin-left: auto;
     display: flex;
 
 }
 
 
-.head-contacts .item:not(:last-child) {
+.header-contacts__item:not(:last-child) {
     margin-right: 50px;
 
 }
@@ -74,7 +74,7 @@
 }
 
 /* Fonts for head list */
-.nav-link {
+.header-nav__link {
     position: relative;
     display: block;
     padding-top: 32px;
@@ -86,19 +86,19 @@
     transition: color $time $cubic;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.header-nav__link:hover,
+.header-nav__link:focus {
     color: $selected-color;
 }
 
-.nav-link-color {
+.header-nav__link--2color {
     color: $selected-color;
 }
 
 
 /* Head contacts */
 
-.head-contacts-link {
+.header-contacts__link {
     display: inline-flex;
     align-items: center;
     padding-top: 32px;
@@ -112,20 +112,20 @@
     transition: color $time $cubic;
 }
 
-.head-contacts-link:hover,
-.head-contacts-link:focus {
+.header-contacts__link:hover,
+.header-contacts__link:focus {
     color: $selected-color;
 }
 
 
-.contact-icon {
+.header-contacts__icon {
     fill: $links-gray;
     margin-right: 10px;
     transition: fill $time $cubic;
 }
 
-.head-contacts-link:hover .contact-icon,
-.head-contacts-link:focus .contact-icon {
+.header-contacts__item:hover .header-contacts__icon,
+.header-contacts__item:focus .header-contacts__icon {
     fill: $selected-color;
 }
 

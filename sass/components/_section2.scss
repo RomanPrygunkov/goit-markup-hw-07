@@ -1,5 +1,5 @@
 /* Fonts for h3 Section 2 in Index */
-.specifications-header-style {
+.specification-list__header {
     margin-bottom: 10px;
     font-size: 14px;
     text-transform: uppercase;
@@ -7,7 +7,7 @@
 }
 
 /* Fonts for p Section 2 */
-.specification-title {
+.specification-list__title {
     font-weight: 400;
     line-height: 1.71;
     color: $links-gray;
@@ -21,7 +21,7 @@
     justify-content: space-between;
 }
 
-.specification-list .item {
+.specification-list__item {
 
     max-width: 270px;
 
@@ -32,7 +32,7 @@
 }
 
 
-.spec-container {
+.specification-container {
     display: flex;
     height: 120px;
     margin-bottom: 30px;

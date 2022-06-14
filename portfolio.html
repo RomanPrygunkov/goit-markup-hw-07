@@ -7,43 +7,46 @@
     <title>Портфолио</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
     <!-- Header -->
-<header class="header-border">
-    <div class="container header-formating">
-        <nav class="header-formating">
-            <a href="./index.html" class="logo" aria-label="Логотип">Web<span class="logohead-second-color">Studio</span></a>
-            <ul class="header-nav">
-                <li class="header-nav-item"><a href="./index.html" class="nav-link">Студия</a></li>
-                <li class="header-nav-item"><a href="./portfolio.html" class="nav-link nav-link-color">Портфолио</a></li>
-                <li class="header-nav-item"><a href="" class="nav-link">Контакты</a></li>
+    <header class="header-border">
+        <div class="container header-formating">
+            <nav class="header-formating">
+                <a href="./index.html" class="header-formating__logo" aria-label="Логотип">Web<span
+                        class="header-formating__logo--2color">Studio</span></a>
+                <ul class="header-nav">
+                    <li class="header-nav__item">
+                        <a href="./index.html" class="header-nav__link">Студия</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="./portfolio.html" class="header-nav__link header-nav__link--2color">Портфолио</a>
+                    </li>
+                    <li class="header-nav__item"><a href="" class="header-nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+    
+            <ul class="header-contacts">
+                <li class="header-contacts__item">
+                    <a href="mailto:info@devstudio.com" class="header-contacts__link" aria-label="Ссылка на почту">
+                        <svg class="header-contacts__icon" width="16px" height="12px" aria-label="Иконка конверта">
+                            <use href="./images/sprite.svg#iconmail"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="header-contacts__item">
+                    <a href="tel:+380961111111" class="header-contacts__link" aria-label="Контактный телефон">
+                        <svg class="header-contacts__icon" width="10px" height="16px" aria-label="Иконка телефона">
+                            <use href="./images/sprite.svg#iconsmartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
             </ul>
-        </nav>
-        <ul class="head-contacts">
-            <li class="item">
-        
-                <a href="mailto:info@devstudio.com" class="head-contacts-link" aria-label="Почта">
-                    <svg class="contact-icon" width="16px" height="12px" aria-label="Иконка конверта">
-                        <use href="./images/sprite.svg#iconmail"></use>
-                    </svg>
-                    info@devstudio.com
-                </a>
-            </li>
-            <li class="item">
-                <a href="tel:+380961111111" class="head-contacts-link" aria-label="Контактный телефон">
-                    <svg class="contact-icon" width="10px" height="16px" aria-label="Иконка телефона">
-                        <use href="./images/sprite.svg#iconsmartphone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
-            </li>
-        </ul>
-    </div>
-
-</header>
+        </div>
+    </header>
     <!-- Main -->
     <main>
                 <!-- Hide later -->

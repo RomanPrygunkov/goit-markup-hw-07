@@ -13,7 +13,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./js/modal.js" />
   </head>
@@ -21,36 +20,36 @@
     <header class="header-border">
       <div class="container header-formating">
         <nav class="header-formating">
-          <a href="./index.html" class="logo" aria-label="Логотип"
-            >Web<span class="logohead-second-color">Studio</span></a
+          <a href="./index.html" class="header-formating__logo" aria-label="Логотип"
+            >Web<span class="header-formating__logo--2color">Studio</span></a
           >
           <ul class="header-nav">
-            <li class="header-nav-item">
-              <a href="./index.html" class="nav-link nav-link-color">Студия</a>
+            <li class="header-nav__item">
+              <a href="./index.html" class="header-nav__link header-nav__link--2color">Студия</a>
             </li>
-            <li class="header-nav-item">
-              <a href="./portfolio.html" class="nav-link">Портфолио</a>
+            <li class="header-nav__item">
+              <a href="./portfolio.html" class="header-nav__link">Портфолио</a>
             </li>
-            <li class="header-nav-item"><a href="" class="nav-link">Контакты</a></li>
+            <li class="header-nav__item"><a href="" class="header-nav__link">Контакты</a></li>
           </ul>
         </nav>
 
-        <ul class="head-contacts">
-          <li class="item">
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
             <a
               href="mailto:info@devstudio.com"
-              class="head-contacts-link"
+              class="header-contacts__link"
               aria-label="Ссылка на почту"
             >
-              <svg class="contact-icon" width="16px" height="12px" aria-label="Иконка конверта">
+              <svg class="header-contacts__icon" width="16px" height="12px" aria-label="Иконка конверта">
                 <use href="./images/sprite.svg#iconmail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="head-contacts-link" aria-label="Контактный телефон">
-              <svg class="contact-icon" width="10px" height="16px" aria-label="Иконка телефона">
+          <li class="header-contacts__item">
+            <a href="tel:+380961111111" class="header-contacts__link" aria-label="Контактный телефон">
+              <svg class="header-contacts__icon" width="10px" height="16px" aria-label="Иконка телефона">
                 <use href="./images/sprite.svg#iconsmartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -71,51 +70,51 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal modal-container">
           <button data-modal-close type="button" class="modal-close">
-            <svg class="icon-close" aria-label="Иконка закрыть">
+            <svg class="modal-iconclose" aria-label="Иконка закрыть">
               <use href="./images/sprite.svg#iconclose"></use>
             </svg>
           </button>
           <form class="modal-form">
             <p class="modal-description">Оставьте свои данные, мы вам перезвоним</p>
-            <label class="form-area">
-              <input type="text" name="name" class="form-input" />
-              <svg class="form-icon" aria-label="Иконка человека">
+            <label class="modal-area">
+              <input type="text" name="name" class="modal-input" />
+              <svg class="modal-icon" aria-label="Иконка человека">
                 <use href="./images/sprite.svg#iconname"></use>
               </svg>
-              <span class="form-title" aria-label="Имя">Имя</span>
+              <span class="modal-title" aria-label="Имя">Имя</span>
             </label>
-            <label class="form-area">
-              <input type="tel" name="phone" class="form-input" />
-              <svg class="form-icon" aria-label="Иконка телефона">
+            <label class="modal-area">
+              <input type="tel" name="phone" class="modal-input" />
+              <svg class="modal-icon" aria-label="Иконка телефона">
                 <use href="./images/sprite.svg#iconphone"></use>
               </svg>
-              <span class="form-title" aria-label="Телефон">Телефон</span>
+              <span class="modal-title" aria-label="Телефон">Телефон</span>
             </label>
-            <label class="form-area">
-              <input type="tel" name="email" class="form-input" />
-              <svg class="form-icon" aria-label="Иконка почты">
+            <label class="modal-area">
+              <input type="tel" name="email" class="modal-input" />
+              <svg class="modal-icon" aria-label="Иконка почты">
                 <use href="./images/sprite.svg#iconmodalmail"></use>
               </svg>
-              <span class="form-title" aria-label="Почта">Почта</span>
+              <span class="modal-title" aria-label="Почта">Почта</span>
             </label>
-            <label class="form-area">
-              <span class="form-title">Комментарии</span>
+            <label class="modal-area">
+              <span class="modal-title">Комментарии</span>
               <textarea name="comment" placeholder="Введите текст"></textarea>
             </label>
             <div class="agreement-position">
-              <label class="form-area-agreement">
+              <label class="agreement-position__label">
                 <span>
-                  <input type="checkbox" class="agreement" />Соглашаюсь с рассылкой и принимаю
+                  <input type="checkbox" class="agreement-position__input" />Соглашаюсь с рассылкой и принимаю
 
                   <a href="" aria-label="Условия договора">Условия договора</a>
 
-                  <svg class="agreement-icon" aria-label="Иконка подтверждения">
+                  <svg class="agreement-position__icon" aria-label="Иконка подтверждения">
                     <use href="./images/sprite.svg#iconcheck"></use>
                   </svg>
                 </span>
               </label>
             </div>
-            <button type="submit" class="modal-button">Отправить</button>
+            <button type="submit" class="agreement-position__button">Отправить</button>
           </form>
         </div>
       </div>
@@ -125,47 +124,47 @@
           <!-- Header will be hiden later -->
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="specification-list">
-            <li class="item">
-              <div class="spec-container">
-                <svg class="icon-spec" width="70px" height="70px" aria-label="Иконка спутника">
+            <li class="specification-list__item">
+              <div class="specification-container">
+                <svg width="70px" height="70px" aria-label="Иконка спутника">
                   <use href="./images/sprite.svg#iconsatellite"></use>
                 </svg>
               </div>
-              <h3 class="specifications-header-style">Внимание к деталям</h3>
-              <p class="specification-title">
+              <h3 class="specification-list__header">Внимание к деталям</h3>
+              <p class="specification-list__title">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="item item-punctuality">
-              <div class="spec-container">
-                <svg class="icon-spec" width="70px" height="70px" aria-label="Иконка часов">
+            <li class="specification-list__item">
+              <div class="specification-container">
+                <svg width="70px" height="70px" aria-label="Иконка часов">
                   <use href="./images/sprite.svg#iconclock"></use>
                 </svg>
               </div>
-              <h3 class="specifications-header-style">Пунктуальность</h3>
-              <p class="specification-title">
+              <h3 class="specification-list__header">Пунктуальность</h3>
+              <p class="specification-list__title">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="item item-planing">
-              <div class="spec-container">
-                <svg class="icon-spec" width="70px" height="70px" aria-label="Иконка графика">
+            <li class="specification-list__item">
+              <div class="specification-container">
+                <svg width="70px" height="70px" aria-label="Иконка графика">
                   <use href="./images/sprite.svg#icondiagram"></use>
                 </svg>
               </div>
-              <h3 class="specifications-header-style">Планирование</h3>
-              <p class="specification-title">
+              <h3 class="specification-list__header">Планирование</h3>
+              <p class="specification-list__title">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="item item-technology">
-              <div class="spec-container">
-                <svg class="icon-spec" width="70px" height="70px" aria-label="Иконка астронавт">
+            <li class="specification-list__item">
+              <div class="specification-container">
+                <svg width="70px" height="70px" aria-label="Иконка астронавт">
                   <use href="./images/sprite.svg#iconastronaut"></use>
                 </svg>
               </div>
-              <h3 class="specifications-header-style">Современные технологии</h3>
-              <p class="specification-title">
+              <h3 class="specification-list__header">Современные технологии</h3>
+              <p class="specification-list__title">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
