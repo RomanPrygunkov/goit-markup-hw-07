@@ -1,0 +1,133 @@
+.main-header {
+    width: 696px;
+    margin-bottom: 30px;
+    color: $primary-text-color;
+}
+
+.main-header-bg {
+    max-height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/header.jpg");
+    background-color: #C4C4C4;
+    ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.header-nav {
+    display: flex;
+}
+
+
+.header-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-border {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.nav-link-color::after {
+    position: absolute;
+    display: inline-flex;
+    content: "";
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $selected-color;
+}
+
+
+.head-contacts {
+    margin-left: auto;
+    display: flex;
+
+}
+
+
+.head-contacts .item:not(:last-child) {
+    margin-right: 50px;
+
+}
+
+.header-formating {
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+/* Fonts for head list */
+.nav-link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: $main-black-color;
+    text-decoration: none;
+    transition: color $time $cubic;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: $selected-color;
+}
+
+.nav-link-color {
+    color: $selected-color;
+}
+
+
+/* Head contacts */
+
+.head-contacts-link {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $links-gray;
+    text-decoration: none;
+    transition: color $time $cubic;
+}
+
+.head-contacts-link:hover,
+.head-contacts-link:focus {
+    color: $selected-color;
+}
+
+
+.contact-icon {
+    fill: $links-gray;
+    margin-right: 10px;
+    transition: fill $time $cubic;
+}
+
+.head-contacts-link:hover .contact-icon,
+.head-contacts-link:focus .contact-icon {
+    fill: $selected-color;
+}
+
+
+

@@ -1,0 +1,25 @@
+.logo {
+    margin-right: 93px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    color: $selected-color;
+    text-decoration: none;
+}
+
+.logo-footer {
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+/* Separate color for logo in head*/
+.logohead-second-color {
+    color: #000000;
+}
+
+/* Separate color for logo in footer */
+.logofooter-second-color {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: $primary-text-color;
+}

@@ -1,0 +1,180 @@
+/* Footer style */
+.footer-style {
+    background-color: #2F303A;
+
+}
+
+/* Footer contacts */
+.footer-contacts-link {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color $time $cubic;
+}
+
+.footer-contacts-link:last-child {
+    margin-top: 9px;
+
+}
+
+
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+    color: $selected-color;
+}
+
+.footer-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-text-normal {
+    font-style: normal;
+}
+
+.footer-formating {
+    display: flex;
+    align-items: baseline;
+
+
+}
+
+.footer-soc-list {
+    display: flex;
+
+
+
+
+}
+
+.footer-soc-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.footer-soc-container p {
+    margin-bottom: 20px;
+}
+
+.footer-soc-container li:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.social-links-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color $time $cubic;
+
+}
+
+.social-links-footer:hover,
+.social-links-footer:focus {
+    background-color: $selected-color;
+}
+
+.social-icon-footer {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+}
+
+.text-connect {
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-form {
+    margin-left: 93px;
+}
+
+.form-area-footer {
+    display: inline-flex;
+
+    margin-top: 20px;
+}
+
+.form-input-footer {
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    color: $primary-text-color;
+}
+
+.form-input-footer::placeholder {
+    padding-top: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.button-footer {
+    display: inline-flex;
+
+    margin-left: 12px;
+    padding-left: 29px;
+    padding-right: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    outline: none;
+    min-width: 200px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $primary-text-color;
+    border: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: $selected-color;
+    background-color: $selected-color;
+    cursor: pointer;
+}
+
+.button-footer::after {
+    display: block;
+    margin-left: 10px;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/iconplane.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Adress */
+.adress {
+    margin-bottom: 9px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+}
