@@ -11,11 +11,11 @@
 }
 
 
-.activity-list .item:nth-child(n+4) {
+.activity-list__item:nth-child(n+4) {
     margin-top: 30px;
 }
 
-.activity-description {
+.activity-list__description {
     position: absolute;
     display: inline-flex;
     bottom: 0;
@@ -33,7 +33,7 @@
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.activity-image {
+.activity-list__image {
     position: relative;
     display: flex;
 }

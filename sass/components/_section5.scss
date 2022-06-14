@@ -4,14 +4,14 @@
     justify-content: space-between;
 }
 
-.clients-icon {
+.clients-list__icon {
     width: 106px;
     height: 60px;
     fill: #AFB1B8;
     transition: fill $time $cubic;
 }
 
-.clients-links {
+.clients-list__links {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -22,12 +22,12 @@
     transition: border $time $cubic;
 }
 
-.clients-links:hover .clients-icon,
-.clients-links:focus .clients-icon {
+.clients-list__links:hover .clients-list__icon,
+.clients-list__links:focus .clients-list__icon {
     fill: $selected-color;
 }
 
-.clients-links:hover,
-.clients-links:focus {
+.clients-list__links:hover,
+.clients-list__links:focus {
     border: 1px solid $selected-color;
 }
