@@ -1,12 +1,6 @@
-.visually-hidden {
+.hide {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  opacity: 0;
 }
 
 .header-formating__logo {
@@ -104,10 +98,6 @@
   display: flex;
 }
 
-.header-contacts__item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .header-formating {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,8 +121,7 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav__link:hover,
-.header-nav__link:focus {
+.header-nav__link:hover, .header-nav__link:focus {
   color: #2196F3;
 }
 
@@ -160,8 +149,7 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts__link:hover,
-.header-contacts__link:focus {
+.header-contacts__link:hover, .header-contacts__link:focus {
   color: #2196F3;
 }
 
@@ -175,6 +163,10 @@
 .header-contacts__item:hover .header-contacts__icon,
 .header-contacts__item:focus .header-contacts__icon {
   fill: #2196F3;
+}
+
+.header-contacts__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .button-order {
@@ -199,8 +191,7 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-order:hover,
-.button-order:focus {
+.button-order:hover, .button-order:focus {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: #188CE8;
@@ -502,8 +493,7 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.agreement-position__button:hover,
-.agreement-position__button:focus {
+.agreement-position__button:hover, .agreement-position__button:focus {
   background-color: #188CE8;
 }
 
@@ -536,10 +526,6 @@
 
 .specification-list__item {
   max-width: 270px;
-}
-
-.specification-list .item:nth-child(n+5) {
-  margin-top: 30px;
 }
 
 .specification-container {
@@ -692,8 +678,7 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list__links:hover,
-.social-list__links:focus {
+.social-list__links:hover, .social-list__links:focus {
   background-color: #2196F3;
 }
 
@@ -753,14 +738,13 @@
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients-list__links:hover, .clients-list__links:focus {
+  border: 1px solid #2196F3;
+}
+
 .clients-list__links:hover .clients-list__icon,
 .clients-list__links:focus .clients-list__icon {
   fill: #2196F3;
-}
-
-.clients-list__links:hover,
-.clients-list__links:focus {
-  border: 1px solid #2196F3;
 }
 
 /* Filter Buttons styles */
@@ -798,9 +782,7 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Buttons styles hover */
-.filter-list__button:hover,
-.filter-list__button:focus {
+.filter-list__button:hover, .filter-list__button:focus {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: #2196F3;
@@ -859,8 +841,7 @@
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list__links:hover,
-.portfolio-list__links:focus {
+.portfolio-list__links:hover, .portfolio-list__links:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -925,8 +906,7 @@
   margin-top: 9px;
 }
 
-.footer-formating__contacts:hover,
-.footer-formating__contacts:focus {
+.footer-formating__contacts:hover, .footer-formating__contacts:focus {
   color: #2196F3;
 }
 
@@ -989,8 +969,7 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social__links:hover,
-.footer-social__links:focus {
+.footer-social__links:hover, .footer-social__links:focus {
   background-color: #2196F3;
 }
 

@@ -22,13 +22,8 @@
 }
 
 .specification-list__item {
+     max-width: 270px;
 
-    max-width: 270px;
-
-}
-
-.specification-list .item:nth-child(n+5) {
-    margin-top: 30px;
 }
 
 

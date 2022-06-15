@@ -61,14 +61,11 @@
     width: 44px;
     height: 44px;
     transition: background-color $time $cubic;
-
+        &:hover, &:focus {
+            background-color: $selected-color;
+        }
 }
 
-.social-list__links:hover,
-.social-list__links:focus {
-    background-color: $selected-color;
-
-}
 
 .social-list__links:hover .social-list__icon,
 .social-list__links:focus .social-list__icon {

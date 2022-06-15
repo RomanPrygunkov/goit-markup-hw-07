@@ -43,24 +43,19 @@
 }
 
 .portfolio-list__links {
-
     display: block;
     text-decoration: none;
     transition: box-shadow $time $cubic;
-}
-
-.portfolio-list__links:hover,
-.portfolio-list__links:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+        &:hover, &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                    0px 4px 4px rgba(0, 0, 0, 0.06),
+                    1px 4px 6px rgba(0, 0, 0, 0.16);
+        } 
 }
 
 .portfolio-list__links:hover .portfolio-overlay__description,
 .portfolio-list__links:focus .portfolio-overlay__description {
-
     transform: translateY(0);
-
 }
 
 

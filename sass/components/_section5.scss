@@ -20,6 +20,9 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition: border $time $cubic;
+        &:hover, &:focus {
+            border: 1px solid $selected-color;
+        }
 }
 
 .clients-list__links:hover .clients-list__icon,
@@ -27,7 +30,3 @@
     fill: $selected-color;
 }
 
-.clients-list__links:hover,
-.clients-list__links:focus {
-    border: 1px solid $selected-color;
-}
