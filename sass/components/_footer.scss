@@ -5,7 +5,7 @@
 }
 
 /* Footer contacts */
-.footer-contacts-link {
+.footer-formating__contacts {
     display: block;
     font-weight: 400;
     font-size: 14px;
@@ -15,14 +15,14 @@
     transition: color $time $cubic;
 }
 
-.footer-contacts-link:last-child {
+.footer-formating__contacts:last-child {
     margin-top: 9px;
 
 }
 
 
-.footer-contacts-link:hover,
-.footer-contacts-link:focus {
+.footer-formating__contacts:hover,
+.footer-formating__contacts:focus {
     color: $selected-color;
 }
 
@@ -42,30 +42,24 @@
 
 }
 
-.footer-soc-list {
+.footer-social__list {
     display: flex;
-
-
-
-
 }
 
-.footer-soc-container {
+.footer-social {
     display: flex;
     flex-direction: column;
     margin-left: 70px;
 }
 
-.footer-soc-container p {
-    margin-bottom: 20px;
-}
 
-.footer-soc-container li:not(:last-child) {
+
+.footer-social li:not(:last-child) {
     margin-right: 10px;
 }
 
 
-.social-links-footer {
+.footer-social__links {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,12 +73,12 @@
 
 }
 
-.social-links-footer:hover,
-.social-links-footer:focus {
+.footer-social__links:hover,
+.footer-social__links:focus {
     background-color: $selected-color;
 }
 
-.social-icon-footer {
+.footer-social__icon {
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -93,7 +87,8 @@
     fill: #FFFFFF;
 }
 
-.text-connect {
+.footer-social__text {
+    margin-bottom: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -102,13 +97,12 @@
     margin-left: 93px;
 }
 
-.form-area-footer {
+.footer-form__label {
     display: inline-flex;
 
-    margin-top: 20px;
 }
 
-.form-input-footer {
+.footer-form__input {
     padding-left: 16px;
     width: 358px;
     height: 50px;
@@ -119,7 +113,7 @@
     color: $primary-text-color;
 }
 
-.form-input-footer::placeholder {
+.footer-form__input::placeholder {
     padding-top: 15px;
     font-style: normal;
     font-weight: 400;
@@ -129,7 +123,7 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.button-footer {
+.footer-form__button {
     display: inline-flex;
 
     margin-left: 12px;
@@ -157,7 +151,7 @@
     cursor: pointer;
 }
 
-.button-footer::after {
+.footer-form__button::after {
     display: block;
     margin-left: 10px;
     content: "";
@@ -170,7 +164,8 @@
 
 
 /* Adress */
-.adress {
+.footer-formating__adress {
+    margin-top: 20px;
     margin-bottom: 9px;
     font-weight: 400;
     font-size: 14px;

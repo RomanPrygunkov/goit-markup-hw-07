@@ -7,10 +7,7 @@
     text-decoration: none;
 }
 
-.logo-footer {
-    margin-right: 0;
-    margin-bottom: 20px;
-}
+
 
 /* Separate color for logo in head*/
 .header-formating__logo--2color {
@@ -18,8 +15,15 @@
 }
 
 /* Separate color for logo in footer */
-.logofooter-second-color {
-    display: inline-block;
-    margin-bottom: 20px;
+.footer-formating__logo--2color {
     color: $primary-text-color;
+}
+
+.footer-formating__logo {
+    margin-right: 93px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    color: $selected-color;
+    text-decoration: none;
 }
