@@ -13,12 +13,12 @@
 }
 
 /* Separate color for logo in head*/
-.header-formating__logo--2color {
+.header-formating__logo--secondary-color {
   color: #000000;
 }
 
 /* Separate color for logo in footer */
-.footer-formating__logo--2color {
+.footer-formating__logo--secondary-color {
   color: #FFFFFF;
 }
 
@@ -77,7 +77,7 @@
   margin-right: 50px;
 }
 
-.header-nav__link--2color::after {
+.header-nav__link--secondary-color::after {
   position: absolute;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
