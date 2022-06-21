@@ -9,3 +9,12 @@
 %transition-transform {
     transition: transform $time $cubic;
 }
+
+%logo {
+    margin-right: 93px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    color: $selected-color;
+    text-decoration: none;
+}
