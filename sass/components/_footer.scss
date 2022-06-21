@@ -22,7 +22,7 @@
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    transition: color $time $cubic;
+    @extend %transition-color;
 
     &:last-child {
         margin-top: 9px;

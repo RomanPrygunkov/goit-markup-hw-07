@@ -59,7 +59,7 @@
     letter-spacing: 0.02em;
     color: $main-black-color;
     text-decoration: none;
-    transition: color $time $cubic;
+    @extend %transition-color;
 
     &:hover,
     &:focus {
@@ -88,7 +88,7 @@
     letter-spacing: 0.02em;
     color: $links-gray;
     text-decoration: none;
-    transition: color $time $cubic;
+    @extend %transition-color;
 
     &:hover,
     &:focus {
@@ -99,7 +99,7 @@
 &__icon {
     fill: $links-gray;
     margin-right: 10px;
-    transition: fill $time $cubic;
+    @extend %transition-fill;
 }
 &__item:not(:last-child) {
     margin-right: 50px;

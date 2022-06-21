@@ -72,7 +72,7 @@
     top: 0;
     left: 0;
     transform: translateY(100%);
-    transition: transform $time $cubic;
+    @extend %transition-transform;
 
     padding-top: 63px;
     padding-right: 24px;

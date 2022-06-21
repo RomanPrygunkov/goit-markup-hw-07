@@ -1,0 +1,11 @@
+%transition-fill {
+    transition: fill $time $cubic;
+}
+
+%transition-color {
+    transition: color $time $cubic;
+}
+
+%transition-transform {
+    transition: transform $time $cubic;
+}

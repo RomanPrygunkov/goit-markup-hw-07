@@ -1,3 +1,20 @@
+.header-contacts__icon, .modal-iconclose, .modal-icon, .social-list__icon, .clients-list__icon {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav__link, .header-contacts__link, .footer-formating__contacts {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal, .portfolio-overlay__description {
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .hide {
   position: absolute;
   opacity: 0;
@@ -100,8 +117,6 @@
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav__link:hover, .header-nav__link:focus {
@@ -139,8 +154,6 @@
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts__link:hover, .header-contacts__link:focus {
@@ -150,8 +163,6 @@
 .header-contacts__icon {
   fill: #757575;
   margin-right: 10px;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts__item:not(:last-child) {
@@ -234,10 +245,6 @@
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form {
@@ -277,8 +284,6 @@
   fill: black;
   margin: 0;
   padding: 0;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-description {
@@ -325,8 +330,6 @@
   bottom: 14px;
   width: 18px;
   height: 18px;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
@@ -677,8 +680,6 @@
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list__links:hover .social-list__icon,
@@ -702,8 +703,6 @@
   width: 106px;
   height: 60px;
   fill: #AFB1B8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list__links {
@@ -851,10 +850,6 @@
   left: 0;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 63px;
   padding-right: 24px;
   padding-left: 24px;
@@ -895,8 +890,6 @@
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-formating__contacts:last-child {
