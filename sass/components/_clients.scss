@@ -16,13 +16,12 @@
     justify-content: center;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+    @include border (#AFB1B8);
     transition: border $time $cubic;
 
     &:hover,
     &:focus {
-        border: 1px solid $selected-color;
+        @include border ($selected-color);
     }
 }
 }
