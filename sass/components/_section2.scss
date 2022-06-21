@@ -1,31 +1,25 @@
-/* Fonts for h3 Section 2 in Index */
-.specification-list__header {
+.specification-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+&__header {
     margin-bottom: 10px;
     font-size: 14px;
     text-transform: uppercase;
     color: $main-black-color;
-}
+}  
 
-/* Fonts for p Section 2 */
-.specification-list__title {
+&__title {
     font-weight: 400;
     line-height: 1.71;
     color: $links-gray;
 }
 
-/* Section 2 formating */
-
-.specification-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+&__item {
+    max-width: 270px;
 }
-
-.specification-list__item {
-     max-width: 270px;
-
 }
-
 
 .specification-container {
     display: flex;

@@ -2,16 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
 
-.clients-list__icon {
+&__icon {
     width: 106px;
     height: 60px;
     fill: #AFB1B8;
     transition: fill $time $cubic;
 }
 
-.clients-list__links {
+&__links {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -20,9 +19,12 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition: border $time $cubic;
-        &:hover, &:focus {
-            border: 1px solid $selected-color;
-        }
+
+    &:hover,
+    &:focus {
+        border: 1px solid $selected-color;
+    }
+}
 }
 
 .clients-list__links:hover .clients-list__icon,

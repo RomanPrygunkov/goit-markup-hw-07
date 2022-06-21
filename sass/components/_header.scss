@@ -1,3 +1,7 @@
+.header-border {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .main-header {
     width: 696px;
     margin-bottom: 30px;
@@ -29,18 +33,12 @@
 
 .header-nav {
     display: flex;
-}
 
-
-.header-nav__item:not(:last-child) {
+&__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.header-border {
-    border-bottom: 1px solid #ECECEC;
-}
-
-.header-nav__link--2color::after {
+&__link--2color::after {
     position: absolute;
     display: inline-flex;
     content: "";
@@ -52,23 +50,7 @@
     background-color: $selected-color;
 }
 
-
-.header-contacts {
-    margin-left: auto;
-    display: flex;
-
-}
-
-.header-formating {
-
-    display: flex;
-    align-items: center;
-
-
-}
-
-/* Fonts for head list */
-.header-nav__link {
+&__link {
     position: relative;
     display: block;
     padding-top: 32px;
@@ -78,20 +60,24 @@
     color: $main-black-color;
     text-decoration: none;
     transition: color $time $cubic;
-        &:hover, &:focus {
-            color: $selected-color;
-        }
+
+    &:hover,
+    &:focus {
+        color: $selected-color;
+    }
+}
 }
 
-
-.header-nav__link--2color {
-    color: $selected-color;
+.header-formating {
+    display: flex;
+    align-items: center;
 }
 
+.header-contacts {
+    margin-left: auto;
+    display: flex;
 
-/* Head contacts */
-
-.header-contacts__link {
+&__link {
     display: inline-flex;
     align-items: center;
     padding-top: 32px;
@@ -103,25 +89,27 @@
     color: $links-gray;
     text-decoration: none;
     transition: color $time $cubic;
-        &:hover, &:focus {
-            color: $selected-color;
-        }
+
+    &:hover,
+    &:focus {
+        color: $selected-color;
+    }
 }
 
-.header-contacts__icon {
+&__icon {
     fill: $links-gray;
     margin-right: 10px;
     transition: fill $time $cubic;
 }
+&__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+}
+
+
 
 .header-contacts__item:hover .header-contacts__icon,
 .header-contacts__item:focus .header-contacts__icon {
     fill: $selected-color;
 }
-
-.header-contacts__item:not(:last-child) {
-    margin-right: 50px;
-}
-
-
-

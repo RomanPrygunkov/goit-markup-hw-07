@@ -62,15 +62,12 @@
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform $time $cubic;
-}
 
-.modal-form {
-
+&-form {
     width: 448px;
-}
+}    
 
-
-.modal-close {
+&-close {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -86,13 +83,12 @@
     border-radius: 50%;
 }
 
-.modal p {
+& p {
     margin-top: 40px;
     margin-bottom: 30px;
 }
 
-
-.modal-iconclose {
+&-iconclose {
     width: 11px;
     height: 11px;
     fill: black;
@@ -101,35 +97,24 @@
     transition: fill $time $cubic;
 }
 
-.modal-close:hover .modal-iconclose,
-.modal-close:focus .modal-iconclose {
-    fill: $selected-color;
-}
-
-
-.modal-description {
+&-description {
     font-size: 20px;
     line-height: 1.15;
     margin-left: auto;
     margin-right: auto;
     color: $main-black-color;
-
 }
 
-
-
-.modal-area {
+&-area {
     position: relative;
     display: flex;
-        &:nth-child(-n+4) {
-            margin-bottom: 28px;
-        }
+
+    &:nth-child(-n+4) {
+        margin-bottom: 28px;
+    }
 }
 
-
-
-
-.modal-input {
+&-input {
     display: block;
     padding-left: 42px;
     padding-right: 10px;
@@ -139,18 +124,14 @@
     border-radius: 4px;
     transition: border-color $time $cubic;
     cursor: pointer;
-        &:focus {
-            outline: none;
-            border-color: $selected-color;
-        }
 
+    &:focus {
+        outline: none;
+        border-color: $selected-color;
+    }
 }
 
-.modal-input:focus+.modal-icon {
-    fill: $selected-color;
-}
-
-.modal-icon {
+&-icon {
     position: absolute;
     top: 14px;
     left: 15px;
@@ -159,6 +140,30 @@
     height: 18px;
     transition: fill $time $cubic;
 }
+
+&-title {
+    position: absolute;
+    transform: translateY(calc(-100% - 4px));
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $links-gray;
+}
+}
+
+
+.modal-close:hover .modal-iconclose,
+.modal-close:focus .modal-iconclose {
+    fill: $selected-color;
+}
+
+
+
+.modal-input:focus+.modal-icon {
+    fill: $selected-color;
+}
+
 
 .modal-form textarea {
     padding: 0;
@@ -187,7 +192,11 @@
     color: rgba(117, 117, 117, 0.5);
 }
 
-.agreement-position__input {
+
+.agreement-position {
+    margin-top: 20px;
+
+&__input {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -196,24 +205,16 @@
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+}    
 
-.agreement-position {
-    margin-top: 20px;
-}
-
-.agreement-position__label {
+&__label {
     margin-top: 20px;
     width: 100%;
     font-weight: 400;
     line-height: 1.71;
 }
 
-.agreement-position__label>span {
-    position: relative;
-}
-
-.agreement-position__icon {
+&__icon {
     position: absolute;
 
     left: 0;
@@ -228,33 +229,9 @@
     fill: $primary-text-color;
     transition: background-color $time $cubic,
         border-color $time $cubic;
-
 }
 
-.agreement-position__input:checked~.agreement-position__icon {
-    background-color: $selected-color;
-    border-color: $selected-color;
-}
-
-.modal-title {
-    position: absolute;
-    transform: translateY(calc(-100% - 4px));
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: $links-gray;
-}
-
-
-
-
-
-.modal-form a {
-    color: $selected-color;
-}
-
-.agreement-position__button{
+&__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,8 +261,24 @@
     cursor: pointer;
     transition: background-color $time $cubic;
 
-        &:hover, &:focus {
-            background-color: #188CE8;
-        }
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
+}
 }
 
+
+.agreement-position__label>span {
+    position: relative;
+}
+
+
+.agreement-position__input:checked~.agreement-position__icon {
+    background-color: $selected-color;
+    border-color: $selected-color;
+}
+
+.modal-form a {
+    color: $selected-color;
+}

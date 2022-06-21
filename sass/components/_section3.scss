@@ -1,21 +1,14 @@
-/* Field of activity section Index */
 .field-activity-section {
     margin-bottom: 94px;
 }
 
-/* Section 3 formating */
+
 .activity-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
 
-
-.activity-list__item:nth-child(n+4) {
-    margin-top: 30px;
-}
-
-.activity-list__description {
+&__description {
     position: absolute;
     display: inline-flex;
     bottom: 0;
@@ -33,7 +26,14 @@
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.activity-list__image {
+&__image {
     position: relative;
     display: flex;
 }
+}
+
+
+.activity-list__item:nth-child(n+4) {
+    margin-top: 30px;
+}
+
